@@ -53,7 +53,7 @@ def download_latest_release(download_path='.'):
 			print("Actualizando tu versión de MSP...")
 			time.sleep(1.5)
 		pathto = os.path.join(download_path, version)
-		with open(pathto, 'wb') as archivo:
+		with open(pathto, 'wb') as archivo:x
 			archivo.write(requests.get(url).content)
 		return version
 flnm=download_latest_release()
